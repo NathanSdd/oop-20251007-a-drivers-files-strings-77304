@@ -10,8 +10,16 @@ namespace oop_20251007_a_drivers_files_strings_77304.RunDemos
     {
         public static void Run()
         {
-            Console.WriteLine("StringDriver.Run() called");    
+            Console.WriteLine("StringDriver.Run() called");
+            FormattingDemo();
         }
-     
+
+        public static void FormattingDemo()
+        {
+            string name = "Alice";
+            string city = "Seattle";
+
+            Console.WriteLine($"{name}:{city}");
+        }
     }
 }
